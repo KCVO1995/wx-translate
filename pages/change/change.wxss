@@ -1,0 +1,22 @@
+/* pages/chagne/change.wxss */
+.change-page {
+  padding: 0 20rpx;
+}
+.change-page .lang-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15rpx;
+  background-color: #f5f5f5;
+  padding: 15rpx;
+  padding-left: 25rpx;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+.change-page .lang-list.view-hover {
+  background-color: #eee;
+}
+.change-page .lang-list.curLang {
+  background-color: red;
+}
+
+

@@ -1,0 +1,21 @@
+/* pages/chagne/change.wxss */
+.history-page {
+  padding: 25rpx 25rpx;
+}
+.history-page .history {
+  margin-bottom: 20rpx;
+}
+.history-page .history .item {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  padding: 0 15rpx;
+  display: flex;
+  flex-direction: column;
+}sdfsdf
+.history-page .history .item text{
+  padding: 15rpx 0;
+}
+.history-page .history .item .query {
+  border-bottom: 1px solid #999;
+}

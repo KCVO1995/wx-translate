@@ -1,0 +1,13 @@
+<!--pages/chagne/change.wxml-->
+<view class="container change-page">
+  <view wx:for="{{langList}}" 
+        data-lang="{{item.lang}}"
+        data-chs="{{item.chs}}"
+        wx:key="lang" 
+        bindtap="onTap" 
+        hover-class="view-hover" 
+        class="lang-list">
+    <text class="item" >{{item.chs}}</text>
+    <icon type="success_no_circle" size="20" wx:if="{{item.lang === curLang.lang}}" />
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/chagne/change.wxml-->
+<view class="container" class="history-page">
+  <view wx:for="{{history}}" wx:key='index' class="history">
+    <view class="item">
+      <text class="text query">{{item.query}}</text>
+      <text class="text">{{item.result}}</text>
+    </view>
+  </view>
+</view>

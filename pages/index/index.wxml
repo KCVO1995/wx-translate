@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container index-page">
+
+  <view class="input-area">
+    <icon type="clear" size="20" class="clear" bindtap="clearQuery" wx:if="{{hideClearIcon}}" />
+    <textarea placeholder="请输入要翻译的内容" 
+              placeholder-style="color:#666;"
+              bindinput="onInput"
+              value="{{query}}"
+              bindconfirm="onConfirm"
+              bindblur="onConfirm"
+      />
+  </view>
+
+  <view class="change">
+  <navigator url="/pages/change/change" hover-class="navigator-hover">
+    <text>翻译到{{curLang.chs}}</text>
+     <text class="iconfont icon-down"></text>
+   </navigator>
+  </view>
+
+  <view class="translation-area">
+    <view class="translation" wx:for="{{translateText}}" wx:key="index">
+      {{item.dst}}
+    </view>
+  </view>
+</view>
